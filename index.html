@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Project Implementation Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#todo">To-Do List</a>
+    <a href="#products">Products</a>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h1>About Me</h1>
+    <p>Hello! I'm [Your Name], a web developer and programmer.</p>
+    <h2>Projects</h2>
+    <ul>
+      <li>Personal Portfolio Website</li>
+      <li>To-Do List App</li>
+      <li>Product Listing Page</li>
+    </ul>
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+  </section>
+
+  <!-- To-Do List Section -->
+  <section id="todo">
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a task...">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Product Listing Section -->
+  <section id="products">
+    <h1>Product Listing</h1>
+    <select id="categoryFilter">
+      <option value="">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+    </select>
+    <select id="sortFilter">
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+    <div id="productList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
